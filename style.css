@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important; /* horizontal scroll hatane ke liye */
+}
+
+/* Gradient text effect */
+.text-gradient {
+  background: linear-gradient(135deg, #ff7b00, #1f0682);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hero section spacing */
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #ff7b00, #1f0682);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Minimal graphic on right side */
+.hero-graphic {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-graphic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7b0f20, #1f068220);
+  position: absolute;
+}
+
+.icon-wrapper {
+  font-size: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero-buttons .consultation-button:hover{
+    border: 1px solid rgb(31, 6, 130) !important;
+    background-color: white !important;
+    color: #1f0682 !important;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #ff7b00, #1f0682);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Stat boxes */
+.stat-box {
+  text-align: center;
+  padding: 15px 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 25pt;
+  font-weight: bold;
+  color: #ff7b00;
+}
+
+.stat-label {
+  font-size: 12pt;
+  color: #4a5568;
+}
+
+/* Connection visual */
+.entity {
+  min-width: 140px;
+  transition: transform 0.3s ease;
+}
+
+.entity:hover {
+  transform: translateY(-5px);
+}
+
+.number-circle {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #f87d0a, #1f0682);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.stat-box2 {
+    /* padding: 15px 45px !important; */
+    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.headers{
+  font-size: larger;
+}
+
+.step-circle {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f88011, #1f0682);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.step-circle:hover {
+  transform: scale(1.1);
+}
+
+
+.impact-stat {
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  padding: 12px 18px;
+  border-radius: 16px;
+  min-width: 100px;
+}
+
+.impact-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffb347;
+}
+
+.impact-label {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.impact-visual-card {
+  box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+}
+
+
+
+.quote-icon-large {
+  font-size: 5rem;
+  font-family: serif;
+  color: #ff7b00;
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.avatar-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+.contact-message {
+  transition: transform 0.3s ease;
+}
+
+.contact-message:hover {
+  transform: translateY(-5px);
+}
+
+.contact-form-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #ff7b00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0.25);
+}
+
+
+#myBtnContainer{
+    padding-left: 0;
+    text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.col11 {
+    position: relative;
+    display: none; 
+    padding: 8px;
+}
+
+/* Content */
+.content {
+    /* position: relative; */
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+/* .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+} */
+
+#myBtnContainer .btn:hover {
+    background-color: rgb(255, 94, 0);
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+#myBtnContainer .btn.active {
+    background-color: rgb(255, 94, 0);
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.prod1, .honey, .flower, .chair, .lamp, .glasses, .camera, .watch, .wheat{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.col11:hover .prod1, .col11:hover .honey, .col11:hover .flower, .col11:hover .chair, .col11:hover .lamp, .col11:hover .glasses, .col11:hover .camera , .col11:hover .watch, .col11:hover .wheat {
+    opacity: 0.2;
+}
+
+.col11:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: rgba(245, 245, 245, 0.21);
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.chair, .lamp , .honey, .flower, .glasses, .camera, .watch, .wheat, .prod1{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-link:hover {
+  color: #ff7b00 !important;
+  transform: translateX(3px);
+  transition: all 0.3s ease;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #f0f2f5;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.social-icon:hover {
+  background: #ff7b00;
+  color: #ffffff !important;
+  transform: translateY(-3px);
+}
+
+.footer-contact a:hover {
+  color: #ff7b00 !important;
+  transition: all 0.3s ease;
+}
+
+/* Logo visibility */
+.footer-brand img {
+  filter: brightness(1);
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .connection-visual {
+    gap: 10px;
+  }
+  .entity {
+    min-width: 100px;
+    padding: 15px;
+  }
+  .powerful-statement .lead {
+    font-size: 1.3rem;
+  }
+}
+
+/* Better card spacing */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.139);
+}
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+
+  .hero-section {
+    text-align: center;
+  }
+  .hero-section .d-flex {
+    justify-content: center;
+  }
+  h1.display-3, h1.display-4 {
+    font-size: 2rem;
+  }
+  
+  .hero-graphic {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  
+  .circle-graphic {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .icon-wrapper {
+    font-size: 60px;
+  }
+
+  /* Hero buttons stack on mobile */
+  .hero-buttons.d-flex {
+    flex-wrap: wrap;
+  }
+
+  /* Testimonial text smaller on mobile */
+  .testimonial-slide .fs-3 {
+    font-size: 1.1rem !important;
+  }
+
+  /* About section forced margin-top fix */
+  .col-12.col-md-6.col-lg-6[style*="margin-top"] {
+    margin-top: 0 !important;
+  }
+
+  /* Packages row - remove side margins that cause overflow */
+  .row.mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Pricing section top margin too big on mobile */
+  #pricing {
+    margin-top: 0 !important;
+    padding-top: 40px;
+  }
+
+  /* About heading too large on mobile - causes overflow */
+  #about h2.display-4 {
+    font-size: 1.6rem;
+  }
+
+  /* Stat numbers too large on mobile - pt units dont scale */
+  .stat-number {
+    font-size: 18pt;
+  }
+
+  .stat-label {
+    font-size: 10pt;
+  }
+
+  /* Stat boxes shrink padding on mobile */
+  .stat-box {
+    padding: 10px 12px;
+  }
+
+  /* About stat-boxes row should wrap */
+  #about .d-flex.gap-3 {
+    flex-wrap: wrap;
+  }
+
+  /* Hero section min-vh-100 causes too much scroll on mobile */
+  .hero-section .min-vh-100 {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  /* Impact section heading too wide on mobile */
+  #impact h2.display-5 {
+    font-size: 1.4rem;
+  }
+
+  /* Contact section heading */
+  #contact h2.display-4 {
+    font-size: 1.6rem;
+  }
+
+  /* Footer padding */
+  .footer-row {
+    padding: 20px 10px 0;
+  }
+
+  /* About section g-5 row causes overflow on narrow screens */
+  #about .row.g-5 {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+
+  /* Prevent any row from causing horizontal scroll */
+  .row {
+    --bs-gutter-x: 1rem;
+  }
+
+  /* Container padding safety */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* container-fluid rows must not overflow */
+  .container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Pricing package cards full width on mobile */
+  .col-12.col-sm-6.col-lg-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* Tablet breakpoint */
+@media (max-width: 991px) {
+  .navbar-collapse .hero-buttons {
+    margin-top: 10px;
+  }
+
+  /* About heading too large on tablet */
+  #about h2.display-4 {
+    font-size: 2rem;
+  }
+
+  /* About col forced margin-top fix for tablet too */
+  .col-12.col-md-6.col-lg-6[style*="margin-top"] {
+    margin-top: 0 !important;
+  }
+
+  /* Pricing section margin fix for tablet */
+  #pricing {
+    margin-top: 0 !important;
+  }
+
+  /* Prevent container-fluid rows from overflowing on tablet */
+  .container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
