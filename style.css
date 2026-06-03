@@ -347,6 +347,14 @@ body {
   object-fit: contain;
 }
 
+
+
+
+
+
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .connection-visual {
@@ -455,11 +463,14 @@ body {
 
   /* Hero section min-vh-100 causes too much scroll on mobile */
   .hero-section .min-vh-100 {
-    min-height: auto;
+    min-height: auto !important;
     padding-top: 80px;
     padding-bottom: 40px;
   }
 
+  .pricing-container{
+    margin-top: 100px !important;
+  }
   /* Impact section heading too wide on mobile */
   #impact h2.display-5 {
     font-size: 1.4rem;
@@ -504,6 +515,9 @@ body {
     padding-right: 10px;
   }
 }
+
+
+
 /* Tablet breakpoint */
 @media (max-width: 991px) {
   .navbar-collapse .hero-buttons {
