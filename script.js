@@ -31,15 +31,17 @@ filterSelection("all")
     }
     // Add active class to the current button (highlight it)
     function setupButtons() {
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var allBtns = document.getElementById("myBtnContainer").getElementsByClassName("btn");
+          for (var j = 0; j < allBtns.length; j++) {
+            allBtns[j].classList.remove("active");
+          }
+          this.classList.add("active");
+        });
+      }
     }
     window.onload = function() {
       filterSelection("all");

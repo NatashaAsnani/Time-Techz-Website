@@ -471,6 +471,31 @@ body {
   .pricing-container{
     margin-top: 100px !important;
   }
+   .testimonial-slide {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .testimonial-slide p{
+    font-size: 12px !important;
+  }
+  .testimonial-slide div .test-text h5{
+    font-size: 15px !important;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    padding: 0 !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 36px;
+  }
+  .avatar-circle{
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 15px !important;
+  }
   /* Impact section heading too wide on mobile */
   #impact h2.display-5 {
     font-size: 1.4rem;
